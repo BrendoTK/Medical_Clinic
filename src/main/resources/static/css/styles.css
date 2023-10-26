@@ -1,0 +1,153 @@
+/* styles.css */
+
+/* Estilizando o corpo da página */
+body {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Isso ajuda a centralizar em relação à altura da janela de visualização */
+    margin: 0; /* Remove margens padrão para evitar espaçamento extra */
+}
+
+/* Estilizando o cabeçalho */
+.navbar {
+    background-color: #000000;
+}
+
+.navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+
+/* Estilizando o container principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+/* Estilizando a tabela */
+.table {
+    border-collapse: collapse; /* Combina as bordas das células */
+    width: 100%; /* Largura total da tabela (ajuste conforme necessário) */
+    background-color: #fff;
+}
+
+.table th {
+    border: 1px solid #000; /* Adiciona uma borda de 1px sólida (ajuste conforme necessário) */
+    padding: 8px; /* Espaçamento interno para o conteúdo (ajuste conforme necessário) */
+    text-align: left; /* Alinhamento do texto à esquerda (ajuste conforme necessário) */
+    background-color: #000000;
+    color: #fff;
+}
+
+.table thead th {
+    border: 1px solid #ffffff; /* Adiciona uma borda de 1px sólida (ajuste conforme necessário) */
+    padding: 8px; /* Espaçamento interno para o conteúdo (ajuste conforme necessário) */
+    text-align: center; /* Alinhamento do texto à esquerda (ajuste conforme necessário) */
+}
+
+.table td {
+    border: 1px solid #000; /* Adiciona uma borda de 1px sólida (ajuste conforme necessário) */
+    padding: 8px; /* Espaçamento interno para o conteúdo (ajuste conforme necessário) */
+    text-align: left; /* Alinhamento do texto à esquerda (ajuste conforme necessário) */
+}
+
+/* Estilizando botões */
+.btn {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #6C757D;
+}
+
+/* Estilizando formulários */
+.form-control {
+    width: 100%;
+}
+
+/* Estilizando links */
+a {
+    color: #007BFF;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilizando rodapé */
+footer {
+    background-color: #343a40;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.diferente {
+    color: white;
+    background-color: #000000;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline; /* Adiciona sublinhado */
+    font-weight: bold; /* Torna o texto em negrito */
+    color: #0056b3;
+}
+
+p {
+    align-content: center;
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo específico para a logo */
+.logo-imagem {
+    max-width: 50px; /* Largura máxima da logo */
+    height: auto; /* Altura automática para manter a proporção */
+}
+
+/* Estilos adicionais conforme necessário */

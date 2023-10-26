@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html th:replace="~{fragments/layout :: layout(~{::head},~{::main})}">
+<head>
+    <title>Cadastro de Médico</title>
+    <head th:replace="~{fragments/head :: head(~{})}"></head>
+</head>
+<body>
+<main>
+
+<div class="container">
+    <h1>Medico:</h1>
+    <form th:action="${medico.id == null} ? @{/medicos/save} : @{/medicos/update}" th:object="${medico}" method="post">
+        <input type="hidden" th:field="*{id}">
+        <input type="text" th:field="*{nome}"  placeholder="Nome">
+        <input type="text" th:field="*{crm}"  placeholder="Crm">
+        <input type="submit" value="Enviar">
+    </form>
+</div>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout(~{::head},~{::main})}">
+<head>
+    <title>Cadastro de Consulta</title>
+    <head th:replace="~{fragments/head :: head(~{})}"></head>
+</head>
+<body>
+<main>
+    <div class="container">
+        <h1>Consulta:</h1>
+        <form th:action="${consulta.id == null} ? @{/consultas/save} : @{/consultas/update}" th:object="${consulta}" method="post">
+            <input type="hidden" th:field="*{id}">
+
+            <!-- Seletor de Paciente -->
+            <div class="form-group">
+                <label>Paciente:</label>
+                <select id="paciente" name="paciente" th:field="*{paciente.id}" class="form-select">
+                    <option value="">Selecione...</option>
+                    <option th:each="p : ${pacientes}"
+                            th:value="${p.id}"
+                            th:text="${p.nome}">
+                    </option>
+                </select>
+            </div>
+
+            <!-- Seletor de Médico -->
+            <div class="form-group">
+                <label>Médico:</label>
+                <select id="medico" name="medico" th:field="*{medico.id}" class="form-select">
+                    <option value="">Selecione...</option>
+                    <option th:each="m : ${medicos}"
+                            th:value="${m.id}"
+                            th:text="${m.nome}">
+                    </option>
+                </select>
+            </div>
+
+            <input type="text" th:field="*{observacao}" placeholder="Observação">
+            <input type="text" th:field="*{data}" placeholder="Data">
+            <input type="text" th:field="*{valor}" step="0.01" placeholder="Valor">
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</main>
+</body>
+</html>
